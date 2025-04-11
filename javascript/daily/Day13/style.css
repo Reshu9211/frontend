@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+}
+#first{
+    background-color: aqua;
+    border:2px solid red;
+    height: 100px;
+    width:100px;
+    margin: 10px;
+}
+#second{
+    background-color: aqua;
+    border:2px solid red;
+    height: 100px;
+    width:100px;
+    margin: 10px;
+}
+#third{
+    background-color: aqua;
+    border:2px solid red;
+    height: 100px;
+    width:100px;
+    margin: 10px;
+}

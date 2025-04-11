@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interview question Day2</title>
+</head>
+<body>
+
+    <h3>Question 1: What are objects in JavaScript?</h3>
+    <p>Objects in JavaScript are collections of key-value pairs used to store data and functions.</p>
+
+    <h3>Question 2: What are functions?</h3>
+    <p>Functions are reusable blocks of code that perform a specific task. They can take input and return a result.</p>
+
+    <h3>Question 3: What is an event loop and call stack?</h3>
+    <p>The call stack keeps track of function calls. The event loop handles async operations, placing them in the call stack when it's clear.</p>
+
+    <h3>Question 4: What is the DOM?</h3>
+    <p>The Document Object Model (DOM) is a structured representation of HTML that JavaScript can interact with.</p>
+
+    <h3>Question 5: Difference between undefined, not defined, and NaN</h3>
+    <p><strong>undefined:</strong> Declared but not assigned.<br>
+       <strong>not defined:</strong> Not declared.<br>
+       <strong>NaN:</strong> Invalid number result.</p>
+
+    <h3>Question 6: What are arrow functions?</h3>
+    <p>Arrow functions are a concise way to define functions using `=>`, and they don’t have their own `this` context.</p>
+
+    <h3>Question 7: What is the for-in loop in JavaScript? Give its syntax</h3>
+    <p>The JavaScript for in statement loops through the properties of an Object</p>
+    <pre>
+const obj = { a: 1, b: 2 };
+for (let key in obj) {
+    console.log(key, obj[key]);
+}
+    </pre>
+
+    <h3>Question 8: Explain Local Scope, Block Scope, Functional Scope and Scope Chain</h3>
+    <p><strong>Local Scope:</strong> Local scope means that a variable is accessible only inside the function where it is defined.<br>
+       <strong>Block Scope:</strong> Block scope applies to variables declared with let or const inside a pair of curly braces {} like in if, for, etc.<br>
+       <strong>Functional Scope:</strong>This means variables declared with var are limited to the entire function, not just inside the block.<br>
+       <strong>Scope Chain:</strong> \The scope chain is the process JS uses to look for variables: it starts from the current scope and moves outward until it finds the variable.</p>
+
+    <h3>Question 9: Difference between null and undefined</h3>
+    <p><strong>null:</strong>  "This variable has no value on purpose."<br>
+       <strong>undefined:</strong>A variable that has been declared but has not been assigned a value</p>
+
+    <h3>Question 10: map and filter example</h3>
+    <p><strong>map:</strong>  "creates a new array by applying a function to each element of the original array."<br>
+        <strong>filter:</strong>creates a new array that contains only the elements that pass a certain condition (return true in the callback).</p>
+       <pre>
+        const numbers = [1, 2, 3, 4, 5, 6];
+
+// Using map to square each number
+const squares = numbers.map(num => num * num);
+
+// Using filter to get only even numbers
+const evens = numbers.filter(num => num % 2 === 0);
+
+console.log("Original array:", numbers);
+console.log("Squares (map):", squares);
+console.log("Even numbers (filter):", evens);
+       </pre>
+    <h3>Question 11: Count 0's in an array</h3>
+    <pre >
+        const binaryArray = [0, 1, 0, 1, 0, 1, 1, 0, 0];
+
+        let zeroCount = 0;
+        
+        for (let num of binaryArray) {
+            if (num === 0) {
+                zeroCount++;
+            }
+        }
+        
+        console.log("Array:", binaryArray);
+        console.log("Number of 0's:", zeroCount);</pre>
+
+    <h3>Question 12: Count odd and even numbers in an array</h3>
+    <pre >
+        const numbers = [10, 23, 44, 55, 66, 71, 80];
+
+        let oddCount = 0;
+        let evenCount = 0;
+        
+        for (let num of numbers) {
+            if (num % 2 === 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+        
+        console.log("Array:", numbers);
+        console.log("Even numbers:", evenCount);
+        console.log("Odd numbers:", oddCount);</pre>
+
+    <h3>Question 13: Count vowels in a string</h3>
+    <pre>let a="prepbytes";
+        let count =0;
+        for (let i=0;i<=a.length;i++)
+        {
+           let ch=a[i];
+           if(ch==='a'||ch==='e'||ch==='i'||ch==='o'||ch==='u'||ch==='A'||ch==='E'||ch==='I'||ch==='O'||ch==='U')
+           {
+               count++;
+           }
+        }
+        console.log(count)</pre>
+
+    <script src="script.js"></script>
+</body>
+</html>

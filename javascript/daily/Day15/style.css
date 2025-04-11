@@ -1,0 +1,12 @@
+body{
+    background-image: linear-gradient(pink,skyblue,yellow,orange);
+    background-repeat: no-repeat;
+}
+
+#showbtn{
+    background-color:yellow;
+    border-radius: 10px;
+    box-shadow: 2px 2px red;
+
+}
+
