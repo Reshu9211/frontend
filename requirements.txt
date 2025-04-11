@@ -1,1 +1,7 @@
 "# frontend" 
+vscode
+  live server
+  babel extension 
+git bash
+   check git -v
+   add account github
