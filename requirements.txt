@@ -5,3 +5,7 @@ vscode
 git bash
    check git -v
    add account github
+learning:
+  html
+  css
+  js
