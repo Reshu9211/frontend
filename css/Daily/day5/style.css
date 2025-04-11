@@ -1,0 +1,38 @@
+.main{
+    margin: 100px;
+    /* position: relative; */
+    position: absolute;
+
+}
+
+.card1{
+    
+    background-color: rgb(227, 236, 131);
+    height: 100px;
+    width: 100px;
+    /* position: relative; */
+    left: 100px;
+    position:absolute;
+    
+  
+    
+ }
+ .card2{
+   
+    background-color: rgb(197, 126, 181);
+    height: 80px;
+    width: 100px;
+    /* align-self: flex-start; */
+    position: absolute;
+
+    
+ }
+ .card3{
+   
+    background-color: rgb(117, 192, 116);
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    
+    
+ }

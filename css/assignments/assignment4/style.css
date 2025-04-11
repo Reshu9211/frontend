@@ -1,0 +1,180 @@
+.header{
+    background-image:linear-gradient(to right,red,rgb(28, 140, 28),rgb(134, 241, 84) ,yellow);
+    width:100%;
+    height: 25px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: larger;
+}
+.home{
+    width: 800px;
+    height: 100px;
+    border-radius: 10px;
+    background-color:skyblue;
+    border: 2px solid rgb(205, 29, 29);
+    margin:20px auto ;
+    justify-items:center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.box{
+    height: 200px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+.box .box-a{ 
+   
+   display: flex;
+   justify-content:space-evenly;
+}
+.box-a p {
+  height: 60px;
+  width: 350px;
+  border: 2px  solid green;
+  border-radius: 15px ;
+  text-align:center;
+  background-color: aqua;
+  padding: 20px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.box-b p {
+    height: 60px;
+    width: 350px;
+    border: 2px  solid green;
+    border-radius: 15px ;
+    text-align:center;
+    background-color: aqua;
+    margin-left: 500px;
+    padding: 20px;
+    margin-top: -15px;
+    margin-left: 520px;
+    margin-right: 15px;
+}
+.box1{
+    height: 200px;
+    width: 100%;
+    background-image: radial-gradient( blue ,aqua,green );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.score1{
+    height: 130px;
+    width: 210px;
+    border:2px solid red;
+    border-radius: 15px;
+    background-color: yellow;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.score2{
+    height: 130px;
+    width: 210px;
+    border:2px solid red;
+    border-radius: 15px;
+    background-color: yellow;
+    text-decoration: underline;
+    text-align: center;
+}
+.score3{
+    height: 130px;
+    width: 200px;
+    border:2px solid red;
+    border-radius: 15px;
+    background-color: yellow;
+    text-decoration: underline;
+    text-align: center;
+}
+.score4{
+    height: 130px;
+    width: 200px;
+    border:2px solid red;
+    border-radius: 15px;
+    background-color: yellow;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.CAREER{
+height: 400px;
+width:90%;
+border: 2px solid black;
+}
+h5{
+    background-color: red;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.a-c{
+    display: flex;
+justify-content: flex-start;
+gap: 10px;
+}
+.a{
+    height: 70px;
+    width: 400px;
+    background-color: rgb(57, 226, 170);
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+.b{
+    height: 70px;
+    width: 400px;
+    background-color: rgb(179, 198, 191);
+    color: white;
+    font-size: x-large;
+    font-weight: bold;ss
+    text-align: center;
+}
+.c{
+    height: 70px;
+    width: 400px;
+    background-color:rgb(89, 89, 190);
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+.d{
+    height: 130px;
+    width:1220px;
+    background-color:orange;
+    font-size:x-large;
+    
+    color: white;
+    margin-top: -150px;
+}
+.olist{
+    height: 220px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    text-decoration: underline;
+    text-align: center;
+}
+.a-c-olist{
+    display: flex;
+    justify-content: space-between;
+}
+h6{
+    background-color: aqua;
+    font-size: x-large;
+    font-weight:bold;
+    text-align: center;
+    margin-top: 40px;
+}

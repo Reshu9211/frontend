@@ -1,0 +1,164 @@
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    background: linear-gradient(to right, 
+    #FF9933,   /* Saffron (Left) */
+    white 40%, /* White in the middle */
+    #138808   /* Green (Right) */
+    );
+    height: 100vh; /* Full screen height */
+    margin: 0;
+    position: relative;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevents content from wrapping */
+}
+
+p {
+    margin-top: 30px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#p1 {
+    background-color: #FF9933;
+    padding: 2px;
+}
+
+#p2 {
+    background-color: white;
+    padding: 2px;
+}
+
+#p3 {
+    background-color: #138808;
+    padding: 2px;
+}
+
+.sky {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 80vh;
+    background: url('./sky.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.road {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 82vh; /* Increased to create a small gap */
+    width: 500%;
+    height: 30%;
+    background: url('./road.jpg') repeat-x;
+    
+    animation: moveRoad 2s linear infinite;
+}
+
+/* Keyframes for smooth right-to-left movement */
+@keyframes moveRoad {
+    from {
+        background-position-x: 100%;
+    }
+    to {
+        background-position-x: 0%;
+    }
+}
+
+.city {
+    position: absolute;
+    left: 10px;
+    top: 35vh;
+    width: 100%; /* Adjust as needed */
+    height: 100%;
+    max-height: 48.5vh;
+    background: url('./city.png') no-repeat center center;
+    border-top: 0.01px double rgba(0, 0, 0, 0.1);;
+    background-size: 113% auto;
+    background-position: left; /* Keeps focus on the middle part */
+    overflow: hidden; /* Ensures cropped area is hidden */
+    z-index: 2;
+}
+
+.sun {
+    position: absolute;
+    bottom: 50vh; /* Places it in the upper half of the sky */
+    right: 120px; /* Starts at 70px from the right */
+    width: 100px; /* Adjust sun size */
+    top: 18vh;
+    height: 100px;
+    background: url('./sun.png') no-repeat center center;
+    background-size: 75% auto;
+    z-index: 3; /* Ensures it's above other elements */
+    animation: moveSun 40s linear infinite;
+}
+
+/* Keyframes for sun movement */
+@keyframes moveSun {
+    0% {
+        right: 70px;
+    }
+    50% {
+        right: 100%; /* Fully disappears */
+    }
+    100% {
+        right: 100% /* remains disappears till time out */
+    }
+}
+
+.car {
+    position: absolute;
+    top: 49vh;
+    left: 410px; /* Adjusts horizontal position */
+    width: 350px; /* Adjust car size */
+    height: 350px;
+    background: url('./car.png') no-repeat center center;
+    background-size: contain; /* Ensures full image fits */
+    z-index: 3; /* Keeps car above the road */
+}
+
+.flag {
+    position: absolute;
+    top: 65vh; /* Adjusts height above bonnet */
+    left: 678px; /* Centers it on the car */
+    width: 65px; /* Adjust as per flag size */
+    height: 60px;
+    background: url('./flag.png') no-repeat center center;
+    background-size: contain;
+    z-index: 4; /* Ensures it's below the car */
+}
+
+.wheel {
+    position: absolute;
+    width: 60px; /* Adjust as per wheel size */
+    height: 80px;
+    background: url('./wheel.png') no-repeat center center;
+    background-size: contain;
+    z-index: 2;
+    animation: rotateWheel 1s linear infinite; /* Continuous rotation */
+}
+
+/* Positioning Front Wheel */
+.front-wheel {
+    bottom: 105px; /* Adjust to align with the car */
+    left: 29.2%; /* Adjust to match the front wheel position */
+}
+
+/* Positioning Rear Wheel */
+.rear-wheel {
+    bottom: 105px;
+    left: 43.2%; /* Adjust to match the rear wheel position */
+    transform: translateX(-50%);
+}
+
+/* Keyframe Animation for Wheel Rotation */
+@keyframes rotateWheel {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(252, 188, 222);
+    color: rgb(221, 72, 147);
+}
+
+h2.a{
+    visibility: visible;
+  
+}
+h2.b{
+    visibility: hidden;
+   
+}

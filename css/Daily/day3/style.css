@@ -1,0 +1,44 @@
+/* div{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 50px;
+    border-radius:150px;
+    background-image:url(download.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+
+    
+} */
+ .main{
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .card1{
+    
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+  
+  
+    
+ }
+ .card2{
+   
+    background-color: rgb(134, 157, 148);
+    height: 100px;
+    width: 100px;
+
+    
+ }
+ .card3{
+   
+    background-color: rgb(255, 127, 244);
+    height: 100px;
+    width: 100px;
+    
+    
+ }

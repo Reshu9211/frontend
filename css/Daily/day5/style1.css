@@ -1,0 +1,63 @@
+.main{
+    margin: 50px;
+    position: relative;
+    
+
+}
+
+.card1{
+    
+    background-color: rgb(227, 236, 131);
+    height:200px;
+    width: 200px;
+    position: relative;
+    top: 300PX;
+    left: 400px;
+
+    z-index: -4;
+  
+
+   
+    
+  
+    
+ }
+ .card2{
+   
+    background-color: rgb(197, 126, 181);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: -3;
+    top: 200PX;
+    left: 300px;
+  
+   
+
+    
+ }
+ .card3{
+   
+    background-color: rgb(42, 118, 181);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: -2;
+    top: 100PX;
+    left: 200px;
+  
+    
+    
+ }
+ .card4{
+   
+    background-color: rgb(171, 68, 82);
+    height: 200px;
+    width: 200px;
+    position: relative;
+    z-index: -1;
+    top: -1PX;
+    left: 100px; 
+    
+    
+ } 

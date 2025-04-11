@@ -1,0 +1,39 @@
+body{
+    background-image: url(sahara-shutterstock_298232516-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+}
+/* 
+.logo {
+   background-image: url(WhatsApp\ Image\ 2025-03-22\ at\ 11.07.09.jpeg);
+   height: 130px;
+   width: 140px;
+} */
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}

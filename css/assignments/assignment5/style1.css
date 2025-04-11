@@ -1,0 +1,56 @@
+body {
+    font-family: Georgia, serif;
+    background-color: yellow;
+    justify-content: center;
+    margin-left: 500px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ol {
+    padding-left: 50px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li {
+    position: relative;
+    margin-bottom: 10px;
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: 3s;
+}
+
+#b1:hover {
+    width: 250px;
+    transition: 3s linear;
+}
+
+#b2:hover {
+    width: 250px;
+    height: 250px;
+    transition: linear;
+    transition: width 2s, height 4s;
+}
+
+#b3:hover {
+    width: 250px;
+    transition: 3s linear;
+}
+
+a{
+    font-size: larger;
+    font-weight: bold;
+    color: darkmagenta;
+    margin-left: 75px;
+}

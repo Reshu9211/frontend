@@ -1,0 +1,202 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    border: 5px solid greenyellow;
+    background-image:url(bg\ img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+    
+  
+}
+
+.header{
+    display: flex;
+}
+
+
+/* Navigation Bar */
+.first{
+     margin: 50px;
+     border: 5px solid red;
+     border-radius: 25px;
+     width: 400px;
+     height: 200px;
+     background-color: black;
+     color: white;
+     font-size: xx-large;
+     font-weight: 800;
+     text-align: center;
+     font-style: italic;
+     font-family: 'Times New Roman', Times, serif;
+ 
+    
+
+
+}
+.second{
+    margin: 50px;
+    border: 5px solid red;
+    border-radius: 25px;
+    width: 450px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    text-align:center;
+    margin-top: 70px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+ 
+
+
+}
+
+.third{
+    margin: 50px;
+    border: 5px solid red;
+    border-radius: 25px;
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+
+
+.nav-links a, .contact-info {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Offers Section */
+.medium{
+    display: flex;
+}
+.offer{
+    margin-top: 100px;
+    width: 450px;
+    height: 450px;
+    border: 5px solid rgb(103, 98, 98);
+    border-radius: 225px;
+    font-family: 'Times New Roman', Times, serif;
+   
+    background-color: rgb(38, 115, 145);
+    overflow: auto;
+
+
+    
+}
+.text{
+    margin-top: 100px;
+    text-align: center;
+    color: aliceblue;
+    font-size:x-large;
+    /* font-style: italic; */
+    font-weight: 600;
+
+
+    
+}
+.text2{
+    margin-top: 40px;
+    text-align: center;
+    color: aliceblue;
+    font-size:x-large;
+    font-style: italic;
+    font-weight: 600;
+
+    
+}
+.reg{
+    text-align: center;
+    color: red;
+    font-size: x-large;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+.register {
+    border: 7px dashed red;
+    width: 550px;
+    height: 800px;
+
+   
+   
+}
+.register.h2 {
+   color: red;
+   text-align: center;
+   
+
+   
+   
+}
+
+.form-group {
+  margin: 30px;
+    text-align: center;
+    color: red;
+    font-size: large
+    font-weight: 600;
+    
+} 
+
+/* Menu Section */
+.menu-header{
+    
+    text-align: center;
+    border: 5px solid red;
+    height: 70px;
+    width: 450px;
+    margin-left: 500px;
+    margin-top: 40px;
+    padding: 20px;
+    color: aliceblue;
+    font-size:xx-large;
+  font-weight: 900;
+  background-color: black;
+  border-radius: 45px;
+font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+  
+}
+.menu-section {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    background-color:aqua;
+    margin: 10px;
+    padding: 15px;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color:rgb(12, 12, 151);
+    border:5px solid rgb(32, 111, 43);
+    font-size: large;
+    justify-items: center;
+}
+ 

@@ -1,0 +1,35 @@
+/* .card{
+    height: 300px;
+    width: 250px;
+    background-color: blueviolet;
+
+}
+@media (min-width:300px) and (min-width:400px){
+    .card{
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+    }
+} */
+  .parent{
+    justify-content: space-evenly;
+    display: flex;
+   
+ } 
+ 
+ .main{
+    margin: 20px;
+    height:200px;
+    background-color: chocolate;
+    width: 200px;
+    border: 2px solid rgb(233, 19, 19);
+    background-color: bisque;
+   
+
+ }
+ @media (min-width:300px) and (min-width:400px){
+    .parent{
+       display: flex;
+       flex-direction: column;
+    }
+ }

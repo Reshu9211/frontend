@@ -1,0 +1,151 @@
+body {
+    font-family: Georgia, serif;
+    background-color: yellow;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ol {
+    padding-left: 50px;
+    text-align: left;
+    display: inline-block;
+}
+
+li {
+    margin-bottom: 50px;
+    list-style: decimal;
+    list-style-position: outside; /* Ensures the number appears outside */
+}
+
+.li-item {
+    display: flex;
+    gap: 100px; /* Reducing gap for better spacing */
+    align-items: center; /* Align shapes properly */
+    margin-left: 30px; /* Offset from the number */
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.li-1 {
+    background-color: rgb(0, 128,128);
+    transform: skewX(-20deg); /* Skew and go to - 20 deg in x-axis*/
+    animation: skew_X 4s linear infinite;
+}
+
+@keyframes skew_X {
+  0% {
+    transform: skewX(-20deg); /* Start at -20 degrees in x-axis*/
+  }
+  50% {
+    transform: skewX(+20deg); /* Goes to +20 degrees in half of the time */
+  }
+  100% {
+    transform: skewX(-20deg); /* Returns back at -20 degrees */
+  }
+}
+
+.li-2{
+  background-color: rgb(47, 79, 79);
+  transform: skewY(+25deg); /* Skew and Go to +25 degrees */
+  animation: skew_Y 4s linear infinite;
+}
+
+@keyframes skew_Y{
+  0% {
+    transform: skewY(+25deg); /* Start at +25 degrees */
+  }
+  50% {
+    transform: skewY(-25deg); /* Goes to opposite direction -25 degrees in half of time*/
+  }
+  100% {
+    transform: skewY(+25deg); /* Return back go +25 degrees */
+  }
+}
+
+.li-3 {
+    background-color: rgb(0, 128, 128);
+    animation: rotate_360 2s linear infinite;
+}
+
+@keyframes rotate_360{
+  0% {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  90%{
+    transform: rotate(360deg); /* End at 360 degrees (full rotation) in 90% time*/
+  }
+  100% {
+    transform: rotate(360deg); /* wait for a little*/
+  }
+}
+
+.lightblue {
+    background-color: lightblue;
+    border: 1px solid blue;
+    animation: shrink_X 4s ease-in-out infinite;
+}
+
+@keyframes shrink_X {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.red {
+    background-color: darkred;
+    animation: shrink_Y 4s ease-in-out infinite;
+}
+
+@keyframes shrink_Y {
+    0% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(0.5);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+}
+
+.green {
+    background-color: green;
+    animation: rotate_90 4s linear infinite;
+}
+
+@keyframes rotate_90 {
+  0% {
+    transform: rotate(0deg); /* Starts at 0 degree */
+  }
+  45% {
+    transform: rotate(90deg); /* complete 90 degrees clockwise rotation */
+  }
+  50% {
+    transform: rotate(90deg); /* pause at 90 degrees state */
+  }
+  95% {
+    transform: rotate(0deg); /* rotate back 90 degrees anticlockwise */
+  }
+  100% {
+    transform: rotate(0deg); /* pause at end for a little */
+  }
+}
+
+a{
+  font-size: x-large;
+  font-weight: 700;
+  color: blue;
+}

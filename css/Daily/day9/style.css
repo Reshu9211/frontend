@@ -1,0 +1,36 @@
+  /* .main{
+    perspective: 1000px;
+  }
+   */
+/*   
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    margin: 100px;
+    padding:50px;
+    box-sizing: border-box;
+    opacity: 0.2;
+  
+
+} */
+/* .box:hover{
+    transform: rotatey(35deg) rotateX(45deg)
+    translatez(150px);
+
+} */
+ /* div p{
+    background-color: yellow;
+
+ } */
+/* div+h1{
+    background-color: aqua;
+} */
+ 
+h1::before{
+    content:" hurry.................holi hai ";
+}
+::marker{
+    color: rgb(209, 63, 126);
+    font-size:x-large;
+}

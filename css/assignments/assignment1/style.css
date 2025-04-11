@@ -1,0 +1,33 @@
+h1{
+    color: red;
+}
+h2{
+    color:rgb(32, 168, 32);
+    font-style: italic;
+}
+
+li.b{
+    text-decoration: underline;
+}
+ul.c{
+    color: maroon;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   letter-spacing: 3px;
+
+}
+p{
+    color: maroon;
+    font-size:large;
+}
+p.a{
+    color: maroon;
+    font-size:x-small
+}
+p.b{
+    color: maroon;
+    font-style: italic;
+    
+}
+a{
+    text-decoration: none;
+}

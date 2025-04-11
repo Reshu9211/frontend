@@ -1,0 +1,40 @@
+/* p{
+    font-family:'Courier New', Courier, monospace ;
+    font-style: italic;
+}
+.p1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    color: rgb(255, 196, 47);
+    font-weight: 900;
+    text-decoration: line-through underline overline;
+    text-decoration-style: double;
+}
+.p2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(126, 223, 126);
+    font-weight: 700;
+
+}
+.p3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: yellow;
+    font-weight: 800;
+}
+.a{
+    font-size: 15px;
+}
+.b{
+    font-size: large;
+}
+.c{
+    font-size: 150%;
+} */
+ div{
+    height: 300px;
+    width: 500px;
+    background-color: blueviolet;
+    margin: 30px 60px 40px 50px;
+ }

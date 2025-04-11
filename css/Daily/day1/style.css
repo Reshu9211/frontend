@@ -1,0 +1,28 @@
+ /* elememt selector */
+h3{
+
+    background-color: brown;
+    text-align: center;
+    border: 1px;
+    border-radius: 30px;
+}
+ /* universe selector */
+*{
+    background-color:lightpink;
+ }
+
+ h3,
+ p,
+ h1 {
+    background:goldenrod;
+ }
+
+#uni{
+    background-color: aqua;
+}
+.hlo{
+    background-color: aquamarine;
+}
+
+
+
