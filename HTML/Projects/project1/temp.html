@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    <H1>Bacltracking</H1>
+ 
+    <p style="color: gray;">Bacltracking is a form of recursion <br>
+        <br>
+    The usual scenarion is that you are faced with a number of option, and you must choose one of theme.After you make your 
+        choice you will get a new set of option;just what set of options you get depents on what choice you made.This procedure is 
+        repeated over and over until you reach a final state.If you made a good sequence of choices,your final state is a goal state; if <br> 
+        you didn't,it isn't.
+    <br>
+    <br>
+
+Conceptuall, you start at the root of a tree; the tree probably has some good leaves and some bad leaves, though it may be that 
+the leaves are all good or all bad. You want to get to a good leaf. At each node,beginning with the root, you choose one of its 
+children to move to, and you keep this up until you get to a leaf. <br>
+    <br>
+Suppose you get to a bad leaf. You can backtrack to continue the search for a good leaf by revoking your most recent choice,
+and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, and try 
+another choice at that node. If  you end up at the root with no options left, these are no good leaves to be found.        
+    <br>
+    <br>
+     This needs an example.
+    <img src="img1.png" alt="" whidth="300" height="200">
+    <ol style="color: gray; type=1">
+    <li>Starting at Root, your options are A and B. You choose A.</li>
+    <li> At A, your options are C and D. You choose C.</li>
+    <li> C is bad. Go back to A. </li>
+    <li> At A, you have already tried C, and it failed. Try D.</li>
+    <li> D is bad. Go back to A.</li>
+    <li> At A, you have no options left to try. Go back to Root.</li>
+    <li> At Root, you have already tried A. Try B.</li>
+    <li> At B, your options are E and F. Try E.</li>
+    <li> E is good. Congratulations!</li>
+    </ol>
+    </p>
+    <div style="border: solid black; ,background-color:gray">
+<p>
+    In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. 
+     There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we 
+     have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching.)
+</p> <br>
+    </div>
+    <hr>
+    <h3>The backtracking algorithm.</h3>
+    <div style="border: solid black">
+<pre>
+    <span style="color:rgb(0, 217, 255)">
+        boolean solve(Node n) {
+
+            if n is a leaf node {
+            
+            if the leaf is a goal node, return true
+            
+            else return false
+            
+            } else {
+            
+            for each child c of n {
+            
+            If solve(c) succeeds, return true
+            
+            }
+        }
+            
+            return false
+        </pre>
+    </span>
+    </div><br>
+    <br>
+    <div style="border: solid black;">
+<p>
+    Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If 
+    solve(n) is true, that means node n is part of a solution--that is, node n is one of the nodes on a path from the root to 
+    some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.
+</p>
+    </div><br>
+    <br>
+    <h3>How does this worl?</h3>
+    <ul>
+        <li>If any child of n is solvable, then n is solvable.</li>
+        <li>any child of n is solvable, then n is not solvable.</li>
+    </ul>
+    <p>
+     Hence, to decide whether any non-leaf node n is solvable (part of a path to a goal node), all you have to do is test whether any 
+     child of n is solvable. This is done recursively, on each child of n. In the above code, this is done by the lines
+    </p>
+    <div style="border: solid black">
+<pre>
+    <span style="color: rgb(0, 187, 255);">
+    for each child c of n {
+
+if solve(c) succeeds, return true
+        }
+return false
+</pre>
+</span>
+    </div>
+  <p>
+    Eventually the recursion will "bottom" out at a leaf node. If the leaf node is a goal node, it is solvable; if the leaf node is not a goal node,
+     it is not solvable. This is our base case, in the above code, this is done by the lines.
+  </p> 
+  <pre>
+  <div style="border: solid;">
+<span style="color: rgb(0, 213, 255);">
+    if n is a leaf node{
+    if the leaf is a goal node, return true
+     else return false
+    }
+</pre>
+</span>
+  </div> 
+  <p>The backtracking algorithm is simple but important. You should understand it thoroughly. Another way of stating it is as follows:
+  </p>
+  <ul type="disc"></ul>
+  <li>To search a tree:</li>
+  <ol type="1">
+<li>If the tree consists of a single leaf, test whether it is a goal node.</li>
+<li>Otherwise, search the subtrees until you find one containing a younode, on wund you have searched mam all unsuccessfully</li>
+  </ol>
+  <h3>Non-recursive backtracking, using a stack</h3>
+  <p>Barracking a mather typical eneursive tantem, and any rusunan bu twinan as a stack argonithen. In fact,
+     that is how your recursive algumthms are translated into machine or assembly language.</p>
+     <div style="border: solid black;">
+        <span style="color: rgb(0, 140, 255);">
+        <pre>
+            boolean solve (Node n) {
+            put node n on the stack;    
+            while the stack in not empty {
+            if the node at the top of the stack is a leaf {
+            if it is a goal node, retum true
+             else pop it off the stack
+            }
+else {
+   if the node at the top of the stack has untried chitaren
+    push the text untried child onto the stack
+  else pop the node off the stack
+}
+return false
+            }    
+        </pre>
+    </div>
+    <p>
+        Staring from the root, the only nodes that can be pushed onto the stack are the children of the node currently on the top of the stack, 
+        and these are only pushed on one child at a time, hence, the nodes on the stack at all times describe a valid path in the tree. 
+         Nodes are removed from the stack only when it is known that they have no goal nodes at all time ther descendents. Therefore, 
+         If the root node gets removed (making the stack empty), there must have been no goat nodes of all, and no solution to the problem.
+
+</p>
+<p>
+    When the stack  algorithm terminates successfully, the nodes on the stack form (in reverse order) a path from the root to a goal node.
+</p>
+<p>
+    Similarly, when the recursive algoritam finds a goal node the path information is embodied (in reverse order) in the sequence of recursive…
