@@ -4,5 +4,13 @@ vscode
   babel extension 
 git bash
    check git -v
+
    add account GitHub
 js
+=======
+   add account github
+learning:
+  html
+  css
+  js
+
